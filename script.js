@@ -2,6 +2,7 @@
 const taskInput = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
+const toggleTheme = document.getElementById("toggleTheme"); // tambahkan ambil tombol theme
 
 // Fungsi tambah task
 function addTask() {
@@ -45,4 +46,9 @@ taskInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         addTask();
     }
+}); // ← ini tadi kurang tutup
+
+// Toggle Dark Mode
+toggleTheme.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
 });
