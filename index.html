@@ -1,47 +1,19 @@
-cat > index.html <<'HTML'
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Informasi Singkat tentang Lemak</title>
-  <style>
-    body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 2rem; }
-    .tag { display:inline-block; padding:.25rem .5rem; border-radius:.5rem; background:#f3f4f6; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
 </head>
 <body>
-
-    <h1>lemak</h1>
-    <table border="1">
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Kelas</th>
-            <th>Jurusan</th>
-        </tr>
-    </table>
-
-  <h1>Apa itu <span class="tag">lemak</span>?</h1>
-  <p>
-    Lemak adalah salah satu makronutrien yang menyediakan energi bagi tubuh, membantu penyerapan vitamin, dan
-    menjadi komponen penting membran sel.
-  </p>
-
-  <h2>Jenis-jenis Lemak</h2>
-  <ul>
-    <li><strong>Lemak tak jenuh</strong>: Umumnya dianggap lebih baik untuk kesehatan jantung.</li>
-    <li><strong>Lemak jenuh</strong>: Konsumsi secukupnya sesuai anjuran.</li>
-    <li><strong>Lemak trans</strong>: Sebaiknya dibatasi semaksimal mungkin.</li>
-  </ul>
-
-  <h2>Contoh Sumber Lemak</h2>
-  <p>
-    Alpukat, kacang-kacangan, ikan berlemak, minyak zaitun, santan, dan produk hewani mengandung beragam jenis lemak.
-  </p>
-
-  <blockquote>
-    Tips: Fokus pada kualitas lemak—prioritaskan lemak tak jenuh dan batasi lemak trans.
-  </blockquote>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div class="input-gruop">
+            <input type="text" id ="taksInput" placeholder="Tulis data baru">
+            <button id="addbtn">Tambah</button>
+        </div>
+        <ul id="taksList"></ul>
+    </div>
+    <script src="">script.js</script>
 </body>
 </html>
