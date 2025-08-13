@@ -2,7 +2,7 @@
 const taskInput = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
-const toggleTheme = document.getElementById("toggleTheme"); // tambahkan ambil tombol theme
+const toggleTheme = document.getElementById("toggleTheme"); // tombol dark mode
 
 // Fungsi tambah task
 function addTask() {
@@ -46,9 +46,16 @@ taskInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         addTask();
     }
-}); // ← ini tadi kurang tutup
+});
 
-// Toggle Dark Mode
+// Toggle Dark Mode + ubah teks tombol
 toggleTheme.addEventListener("click", function () {
     document.body.classList.toggle("dark");
+
+    // Ganti teks tombol sesuai mode
+    if (document.body.classList.contains("dark")) {
+        toggleTheme.textContent = "☀ White Mode";
+    } else {
+        toggleTheme.textContent = "🌙 Dark Mode";
+    }
 });
